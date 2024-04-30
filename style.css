@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0
+}
+body{
+  background:white;
+}
+.contour_content,
+.content{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.haut{
+  position:absolute;
+  top:59px;
+  background:black;
+  height:20px;
+  width:80px;
+  border-radius:13px 13px 0px 0px;
+}
+.contour{
+  position:absolute;
+  top:75px;
+  width:150px;
+  height:250px;
+  border-radius:15px;
+  border:5px black solid;
+  background:transparent;
+}
+.evo{
+  animation-name:batterie;
+  animation-duration:5s;
+  position:absolute;
+  bottom:552px;
+  width:150px;
+  height:252px;
+  border-radius:10px;
+  background:transparent;
+}
+@keyframes batterie{
+  1%{
+    background:red;
+    height:10px;
+  }
+  10%{
+    background:#FF0000;
+    height:25.2px;
+  }
+  20%{
+    background:#FF2A00;
+      height:50.4px;
+  }
+  30%{
+    background:#FF5100;
+    height:75.6px;
+  }
+  40%{
+    background:#FF8300;
+    height:100.8;
+  }
+  50%{
+    background:#FF9E00;
+    height:126px;
+  }
+  60%{
+    background:#FFBD00;
+    height:151.2px;
+  }
+  70%{
+    background:#FFD100;
+    height:176.4px;
+  }
+  80%{
+    background:#F3FF00;
+    height:201.6px;
+  }
+  90%{
+    background:#C9FF00;
+    height:226.7px;
+  }
+  100%{
+    background:#00FF3A;
+    height:252px;
+  }
+}
